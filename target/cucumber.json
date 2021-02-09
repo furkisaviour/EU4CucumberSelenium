@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-09T10:52:45.513Z",
+        "start_timestamp": "2021-02-09T11:25:36.624Z",
         "before": [
           {
             "result": {
-              "duration": 999800,
+              "duration": 1999000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Default page number",
+        "line": 16,
+        "name": "Menu Options",
         "description": "",
-        "id": "contacts-page;default-page-number",
+        "id": "contacts-page;menu-options",
         "after": [
           {
             "result": {
-              "duration": 1465159000,
+              "duration": 3997800,
               "status": "passed"
             },
             "match": {
@@ -35,66 +35,54 @@
         "steps": [
           {
             "result": {
-              "duration": 5830631900,
+              "duration": 1998800,
               "status": "passed"
             },
-            "line": 4,
-            "name": "the user is on the login page",
+            "line": 17,
+            "name": "the user logged in as \"driver\"",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+              "arguments": [
+                {
+                  "val": "\"driver\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_logged_in_as(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4779745700,
+              "duration": 3997500,
               "status": "passed"
             },
-            "line": 5,
-            "name": "the user enters the driver information",
+            "line": 18,
+            "name": "the user should see following options",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_driver_information()"
+              "location": "com.vytrack.step_definitions.ContactsStepDefs.the_user_should_see_following_options(java.util.List\u003cjava.lang.String\u003e)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2797017600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user navigates to \"Customers\" \"Contacts\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Customers\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"Contacts\"",
-                  "offset": 34
-                }
-              ],
-              "location": "com.vytrack.step_definitions.NavigationMenuSteps.the_user_navigates_to(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 6122488000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "default page number should be 1",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 30
-                }
-              ],
-              "location": "com.vytrack.step_definitions.NavigationMenuSteps.default_page_number_should_be(java.lang.Integer)"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "Fleet"
+                ]
+              },
+              {
+                "cells": [
+                  "Customers"
+                ]
+              },
+              {
+                "cells": [
+                  "Activities"
+                ]
+              },
+              {
+                "cells": [
+                  "System"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
