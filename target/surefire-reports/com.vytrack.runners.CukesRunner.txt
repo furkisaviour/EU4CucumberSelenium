@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.vytrack.runners.CukesRunner
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.009 s <<< FAILURE! - in com.vytrack.runners.CukesRunner
-Verify Create Calendar Event(Contacts page)  Time elapsed: 21.31 s  <<< FAILURE!
-java.lang.AssertionError
-
